@@ -175,19 +175,34 @@ h1::after {
     }
 
 .about-div hr {
-    border: 1px solid #1A94C4;
+    border: 1.5px solid #1A94C4;
 }
 
 .about-div h3 {
     font-size: 25px;
     font-weight: 700;
     text-transform: uppercase;
+    color: #2b6151;
 }
 
 .about-div p {
     padding-top: 10px;
 }
-
+.about-div img {
+    border: 3px solid #fff;
+    color: #2f9484;
+    float: left;
+    width: 100%;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    padding-top: 15px;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
 .btn-set {
     border-radius: 0px;
     -webkit-border-radius: 0px;
@@ -209,27 +224,42 @@ h1::after {
     line-height:30px;
     font-weight:700;
 }
-.faculty-div {
+.bus-div {
     padding: 30px;
 }
 
-    .faculty-div hr {
+    .bus-div hr {
         border: 1px solid #1A94C4;
     }
 
-    .faculty-div h3 {
+    .bus-div h3 {
         font-size: 25px;
         font-weight: 700;
         text-transform: uppercase;
     }
 
-    .faculty-div p {
+    .bus-div p {
         padding-top: 10px;
         padding-bottom: 15px;
     }
 
-    .faculty-div img {
-        border: 10px double #fff;
+    .bus-div img {
+        border: 1px solid #fff;
+        color: #2f9484;
+        float: left;
+        width: 95%;
+        height: 300px;
+        align-content: center;
+
+        text-align: center;
+        padding-top: 15px;
+
+        border-radius: 2%;
+        cursor: pointer;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
     }
 
 /*=====================================
@@ -267,4 +297,34 @@ h1::after {
     text-align:right;
     color:#fff;
     font-size:15px;
+}
+
+/*=====================================
+    MY  STYLES
+  ===================================*/
+
+.img-rounded {
+    border-radius: 6px;
+}
+
+.contactnumber {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 2px;
+    color: #000;
+}
+
+.text-highlight{
+    font-size: 18px;
+}
+.text-up{
+    font-size: 1px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    outline-width: inherit;
+    border-radius: 2px;
 }
