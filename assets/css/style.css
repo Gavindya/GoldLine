@@ -117,6 +117,7 @@ body {
 .tag-line {
     background: #E9E9E9;
     color: #000;
+    position: relative;
 }
 
     .tag-line h2 {
@@ -415,7 +416,14 @@ h1::after {
 }
 
 .jes-style{
-    position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+    left: 0px;
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .slides-style{
@@ -463,3 +471,4 @@ h1::after {
     font-size: 3em;
     color: #fff;
 }
+
