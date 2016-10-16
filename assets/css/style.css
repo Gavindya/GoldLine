@@ -25,6 +25,11 @@ body {
     padding-top:30px;
     padding-bottom:50px;
 }
+
+.set-row-pad hr {
+    border: 1.5px solid #fff;
+}
+
 /*=====================================
   NAVBAR STYLES 
     ===================================*/
@@ -59,7 +64,7 @@ body {
 .home-sec {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url(../img/header.jpg) no-repeat center center;
+    /*background: url(../img/header.jpg) repeat center center;*/
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -75,16 +80,14 @@ body {
     .home-sec h1 {
         color: #fff;
         font-weight: 900;
-        font-size: 50px;
+        font-size: 52px;
         text-transform: uppercase;
-        padding-bottom: 35px;
+        padding-bottom: 10px;
     }
 
     .home-sec h3 {
         text-transform: uppercase;
     }
-
-
 
 .set-flexi {
     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
@@ -93,7 +96,7 @@ body {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0);
     background-color: transparent;
     border: 0px solid #000;
-    padding-top: 120px;
+    padding-top: 100px;
 }
 
 .flex-control-nav {
@@ -102,6 +105,10 @@ body {
 
 .set-flexi a {
     margin: 5px;
+}
+
+.set-flexi li {
+    margin-top: 100px;
 }
 /*=====================================
   TAG LINE STYLES 
@@ -296,9 +303,20 @@ h1::after {
     background-color:#2d3d5a;
     text-align:right;
     color:#fff;
-    font-size:15px;
+    font-size:13px;
 }
-
+.footer-container {
+    width: 100%;
+    /*padding:5px 20px;*/
+    background-color:rgba(65, 102, 147, 0.96);
+    /*text-align:right;*/
+    color:#fff;
+    font-size:12px;
+}
+.visamaster {
+    width: 50%;
+    height: 50px;
+}
 /*=====================================
     MY  STYLES
   ===================================*/
@@ -327,4 +345,121 @@ h1::after {
     line-height: 1.33;
     outline-width: inherit;
     border-radius: 2px;
+}
+/*=====================================
+    MY  STYLES MAIN SLIDER DOWNLOADED
+  ===================================*/
+     /* jssor slider bullet navigator skin 05 css */
+     /*
+     .jssorb05 div           (normal)
+     .jssorb05 div:hover     (normal mouseover)
+     .jssorb05 .av           (active)
+     .jssorb05 .av:hover     (active mouseover)
+     .jssorb05 .dn           (mousedown)
+     */
+ .jssorb05 {
+     position: absolute;
+ }
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+    position: absolute;
+    /* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('img/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+/* jssor slider arrow navigator skin 22 css */
+/*
+.jssora22l                  (normal)
+.jssora22r                  (normal)
+.jssora22l:hover            (normal mouseover)
+.jssora22r:hover            (normal mouseover)
+.jssora22l.jssora22ldn      (mousedown)
+.jssora22r.jssora22rdn      (mousedown)
+.jssora22l.jssora22lds      (disabled)
+.jssora22r.jssora22rds      (disabled)
+*/
+.jssora22l, .jssora22r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 58px;
+    cursor: pointer;
+    background: url('img/a22.png') center center no-repeat;
+    overflow: hidden;
+}
+.jssora22l { background-position: -10px -31px; }
+.jssora22r { background-position: -70px -31px; }
+.jssora22l:hover { background-position: -130px -31px; }
+.jssora22r:hover { background-position: -190px -31px; }
+.jssora22l.jssora22ldn { background-position: -250px -31px; }
+.jssora22r.jssora22rdn { background-position: -310px -31px; }
+.jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+.jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+
+/*=====================================
+    MY  STYLES main slider-my styles
+  ===================================*/
+.arrow-nav {
+    top:0px;
+    left:8px;
+    width:40px;
+    height:58px;
+}
+
+.jes-style{
+    position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;
+}
+
+.slides-style{
+    cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;
+}
+
+.sliderimg-style{
+    display: none;
+}
+
+.jes-style .overlay {
+    background: rgba(38, 57, 88, 0.89);
+    min-height: 500px;
+}
+/*=====================================
+    MY  STYLES - logos slider
+  ===================================*/
+.slide-logos {
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    left: 0px;
+    width: 980px;
+    height: 100px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.logos-position{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.set-logoslider{
+    cursor: default;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.socialIcon {
+    font-size: 3em;
+    color: #fff;
 }
