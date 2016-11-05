@@ -38,7 +38,7 @@ body {
     max-height: 40px;
 }
 
-#menu {
+#header_nav {
     background-color: rgba(28, 43, 75, 1);
     color: #fff;
     font-size: 12px;
@@ -46,7 +46,15 @@ body {
     letter-spacing: 1px;
     min-height: 70px;
 }
-
+#main-logo-pic{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+#main-nav{
+    padding-top: -5px;
+    position: relative;
+}
 
 .navbar-inverse {
     border-color: transparent;
@@ -57,19 +65,24 @@ body {
         padding: 22px 10px;
     }
 
+.navbar-pad-original {
+    padding:0px;
+}
+
 
 /*=====================================
   HOME STYLES 
     ===================================*/
 .home-sec {
-    padding-top: 10px;
+    position: relative;
+    padding-top: 130px;
     padding-bottom: 60px;
     /*background: url(../img/header.jpg) repeat center center;*/
-    padding: 0;
+    /*padding: 0;*/
     -webkit-background-size: cover;
     background-size: cover;
     color: #fff;
-    background-attachment: fixed;
+    background-attachment: inherit;
 }
 
     .home-sec .overlay {
@@ -234,6 +247,7 @@ h1::after {
 }
 .bus-div {
     padding: 30px;
+
 }
 
     .bus-div hr {
@@ -256,7 +270,9 @@ h1::after {
         color: #2f9484;
         float: left;
         width: 95%;
-        height: 300px;
+        height: 32.5rem;
+        /*height: 250px;*/
+        /*min-height: 250px;*/
         align-content: center;
 
         text-align: center;
@@ -271,12 +287,12 @@ h1::after {
     }
 
 /*=====================================
-  CONTACT STYLES 
+  CSERVICES STYLES
   ===================================*/
-#contact-sec {
+#services {
     padding-top: 10px;
     padding-bottom: 60px;
-    background: url(../img/contact.jpg) no-repeat center center;
+    background: url(../img/header.jpg) no-repeat center center;
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
@@ -284,15 +300,15 @@ h1::after {
     background-attachment: fixed;
 }
 
-#contact-sec .overlay {
+#services .overlay {
         background: rgba(0, 0, 0, 0.76);
-        min-height: 600px;
+        min-height: 400px;
     }
 
-    #contact-sec h1 {
+    #services h1 {
         color:#fff;
     }
-#contact-sec .form-control{
+#services .form-control{
     background-color:rgba(255, 255, 255, 0);
     color:#fff;
 }
@@ -469,6 +485,6 @@ h1::after {
 
 .socialIcon {
     font-size: 3em;
-    color: #fff;
+
 }
 
