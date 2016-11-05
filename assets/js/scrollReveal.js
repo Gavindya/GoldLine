@@ -392,6 +392,7 @@ window.scrollReveal = (function (window) {
       }
       return a;
     }
+
   }; // end scrollReveal.prototype
 
   return scrollReveal;

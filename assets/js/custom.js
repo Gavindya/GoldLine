@@ -21,7 +21,7 @@
            
             
             window.scrollReveal = new scrollReveal();
-
+            
         },
          scroll_fun: function () {
 
@@ -40,6 +40,7 @@
 
         },
 
+
          top_flex_slider_fun:function()
          {
              /*====================================
@@ -52,6 +53,7 @@
                  startAt: 0,    //Integer: The slide that the slider should start on. Array notation (0 = first slide)
 
              });
+
          },
       
         custom_fun:function()
@@ -69,7 +71,36 @@
             //
             // });
 
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 50) {
+                    $('.my_logoSlider').fadeOut();
+                    $('#main-logo-pic').fadeOut();
+                    // console.log("scroll>>>>>50");
+                    $('#header_nav').stop().animate({
+                        height:'80px'
+                    },600);
+                    $('.home-sec').stop().animate({
+                        paddingTop:'80px'
+                    },600);
 
+                    console.log('80px');
+                    
+                    $('nav').addClass('shrink');
+                } else {
+                    // console.log("scroll<<<<50");
+                    $('.my_logoSlider').fadeIn();
+                    $('#main-logo-pic').fadeIn();
+                    $('#header_nav').stop().animate({
+                        height:'160px'
+                    },600);
+                    $('.home-sec').stop().animate({
+                        paddingTop:'160px'
+                    },600);
+                    console.log('130px');
+                    $('nav').removeClass('shrink');
+                }
+
+            });
 
         },
 
@@ -77,10 +108,12 @@
    
    
     $(document).ready(function () {
+
         mainApp.scrollAnimation_fun();
         mainApp.scroll_fun();
         mainApp.top_flex_slider_fun();
         mainApp.custom_fun();
+
     });
 }(jQuery));
 

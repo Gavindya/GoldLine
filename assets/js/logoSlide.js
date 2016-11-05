@@ -11,7 +11,7 @@ jssor_2_slider_init = function() {
         $Cols: 7
     };
 
-    var jssor_2_slider = new $JssorSlider$("jssor_1", jssor_2_options);
+    var jssor_2_slider = new $JssorSlider$("jssor_2", jssor_2_options);
 
     /*responsive code begin*/
     /*you can remove responsive code if you don't want the slider scales while window resizing*/

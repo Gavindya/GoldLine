@@ -9,7 +9,7 @@ jssor_1_slider_init = function() {
 
     var jssor_1_options = {
         $AutoPlay: true,
-        $SlideDuration: 800,
+        $SlideDuration: 500,
         $SlideEasing: $Jease$.$OutQuint,
         $CaptionSliderOptions: {
             $Class: $JssorCaptionSlideo$,
@@ -32,6 +32,7 @@ jssor_1_slider_init = function() {
         if (refSize) {
             refSize = Math.min(refSize, 1920);
             jssor_1_slider.$ScaleWidth(refSize);
+            // jssor_1_slider.$ScaleY(500);
         }
         else {
             window.setTimeout(ScaleSlider, 30);
